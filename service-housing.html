@@ -1,0 +1,293 @@
+<html><head><base href="https://aladje.com/services#housing"><title>Aladje - Services d'Inspection de Logement au Mali</title>
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  .container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+  }
+  header {
+    background: #008751;
+    color: #ffffff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  header #branding {
+    float: left;
+  }
+  header #branding h1 {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+  header nav {
+    float: right;
+    margin-top: 10px;
+  }
+  header nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  header nav li {
+    display: inline;
+    padding: 0 20px;
+  }
+  .whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 20px;
+    transition: background-color 0.3s ease;
+  }
+  .whatsapp-btn:hover {
+    background-color: #128C7E;
+  }
+  .whatsapp-btn img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+    header nav ul {
+      display: none;
+    }
+    header nav ul.show {
+      display: block;
+    }
+    header nav li {
+      padding: 10px 0;
+      display: block;
+    }
+    .menu-toggle {
+      display: block;
+      text-align: right;
+      padding: 10px;
+    }
+    .whatsapp-btn {
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+      width: fit-content;
+    }
+  }
+  .language-switch {
+    text-align: right;
+    padding: 10px 0;
+  }
+  .language-switch a {
+    color: #008751;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  #page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+  }
+  #page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .services-content {
+    background: #ffffff;
+    padding: 3rem 0;
+  }
+  .service-item {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  .service-item h2 {
+    color: #008751;
+    margin-bottom: 1rem;
+  }
+  .service-item ul {
+    padding-left: 20px;
+  }
+  .service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    display: inline-block;
+    background: #fcd116;
+    color: #333;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  .btn:hover {
+    background: #e5bc14;
+    transform: translateY(-3px);
+  }
+  .inspection-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .inspection-type {
+    background: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .inspection-type img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+  footer {
+    background: #008751;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+  <div class="language-switch">
+    <a href="https://aladje.com/fr/services#housing">Français</a>
+    <a href="https://aladje.com/en/services#housing">English</a>
+    <a href="https://aladje.com/bm/services#housing">Bamanankan</a>
+  </div>
+  
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1>Aladje</h1>
+      </div>
+      <nav>
+        <div class="menu-toggle">☰</div>
+        <ul>
+          <li><a href="https://aladje.com/">Accueil</a></li>
+          <li><a href="https://aladje.com/services">Services</a></li>
+          <li><a href="https://aladje.com/about">À Propos</a></li>
+          <li><a href="https://aladje.com/testimonials">Témoignages</a></li>
+          <li><a href="https://aladje.com/contact">Contact</a></li>
+        </ul>
+        <a href="https://wa.me/22320222324" class="whatsapp-btn" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp Logo" width="24" height="24">
+          Contactez-nous
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="page-header">
+    <div class="container">
+      <h1>Inspection de Logement</h1>
+      <p>Des évaluations détaillées pour garantir la qualité et la sécurité de votre habitat</p>
+    </div>
+  </section>
+
+  <section class="services-content">
+    <div class="container">
+      <div id="housing" class="service-item">
+        <h2>Service d'Inspection de Logement</h2>
+        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Inspecteur examinant une maison avec une tablette" width="800" height="500">
+        <p>Chez Aladje, nous comprenons l'importance d'un logement sûr et de qualité. Notre service d'inspection de logement utilise des technologies de pointe et l'expertise de nos professionnels qualifiés pour fournir des évaluations exhaustives des propriétés résidentielles et commerciales au Mali.</p>
+        
+        <h3>Pourquoi choisir notre service d'inspection ?</h3>
+        <ul>
+          <li>Expertise locale : Nos inspecteurs connaissent parfaitement les normes de construction et les défis spécifiques au Mali.</li>
+          <li>Technologie avancée : Utilisation de caméras thermiques, de détecteurs d'humidité et d'autres outils de pointe pour une inspection approfondie.</li>
+          <li>Rapports détaillés : Vous recevez un rapport complet avec des photos, des explications claires et des recommandations pratiques.</li>
+          <li>Conseils personnalisés : Nos experts vous guident sur les réparations prioritaires et les améliorations potentielles.</li>
+          <li>Certification reconnue : Nos inspections sont reconnues par les institutions financières et les agences immobilières.</li>
+        </ul>
+
+        <h3>Notre processus d'inspection</h3>
+        <ol>
+          <li>Évaluation extérieure : Toiture, murs, fondations, drainage</li>
+          <li>Inspection intérieure : Structure, plomberie, électricité, chauffage/climatisation</li>
+          <li>Détection des problèmes cachés : Humidité, moisissures, termites</li>
+          <li>Vérification de la conformité : Respect des normes de construction locales</li>
+          <li>Rapport et consultation : Présentation des résultats et recommandations</li>
+        </ol>
+
+        <h3>Types d'inspections proposées</h3>
+        <div class="inspection-types">
+          <div class="inspection-type">
+            <img src="https://cdn-icons-png.flaticon.com/512/2830/2830312.png" alt="Icône maison" width="80" height="80">
+            <h4>Inspection pré-achat</h4>
+            <p>Pour les acheteurs potentiels souhaitant évaluer l'état d'une propriété avant l'achat.</p>
+          </div>
+          <div class="inspection-type">
+            <img src="https://cdn-icons-png.flaticon.com/512/3867/3867666.png" alt="Icône construction" width="80" height="80">
+            <h4>Inspection de nouvelle construction</h4>
+            <p>Pour s'assurer que votre nouvelle maison est construite selon les normes et spécifications.</p>
+          </div>
+          <div class="inspection-type">
+            <img src="https://cdn-icons-png.flaticon.com/512/2835/2835954.png" alt="Icône maintenance" width="80" height="80">
+            <h4>Inspection de maintenance</h4>
+            <p>Inspection régulière pour détecter les problèmes potentiels avant qu'ils ne deviennent graves.</p>
+          </div>
+          <div class="inspection-type">
+            <img src="https://cdn-icons-png.flaticon.com/512/3759/3759786.png" alt="Icône location" width="80" height="80">
+            <h4>Inspection pour location</h4>
+            <p>Pour les propriétaires souhaitant évaluer l'état de leur bien avant ou après une location.</p>
+          </div>
+        </div>
+
+        <h3>Tarifs et disponibilité</h3>
+        <p>Nos tarifs varient en fonction de la taille et du type de propriété. Contactez-nous pour obtenir un devis personnalisé. Nous intervenons à Bamako et dans les principales villes du Mali, avec des délais d'intervention généralement inférieurs à 48 heures.</p>
+
+        <a href="https://aladje.com/contact?service=housing" class="btn">Demander un devis d'inspection</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Aladje - Votre Partenaire de Confiance en Services de Surveillance Spécialisés au Mali</p>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('header nav ul').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
