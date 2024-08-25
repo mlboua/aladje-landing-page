@@ -1,10 +1,7 @@
 {
   "routes": [
-    { "src": "/about", "dest": "/about/about.html" },
     { "src": "/contact", "dest": "/contact/contact.html" },
-    { "src": "/news", "dest": "/contact/contact.html" },
     { "src": "/services", "dest": "/services/services.html" },
-    { "src": "/testimonial", "dest": "/testimonial/testimonial.html" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
